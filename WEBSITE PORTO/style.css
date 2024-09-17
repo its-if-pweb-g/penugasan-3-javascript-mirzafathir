@@ -1,0 +1,286 @@
+.profile, .desc, footer{
+    opacity: 0;
+    transform: translateX(0);
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+.section{
+    opacity: 0;
+    transform: translateX(0);
+    animation: fadeIn 2.5s ease-in-out forwards;
+}
+.special {
+    opacity: 0;
+    transform: translateX(0);
+    animation: fadeIn 4.5s ease-in-out forwards;
+}
+.education,.mov,.achievements, .hobbies{
+    opacity: 0;
+        transform: translateX(0);
+        animation: fadeIn 4s ease-in-out forwards;
+}
+@keyframes fadeIn{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #14A3C7;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #ccffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile h1 {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.profile p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #777;
+}
+
+.section, .desc {
+    margin-bottom: 40px;
+}
+
+.section h2, .desc h2, .special h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section p, .desc p {
+    font-size: 1.1em;
+}
+
+.education,
+.achievements {
+    list-style: none;
+    padding: 0;
+}
+
+.hobbies {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mov {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-right: 15px;
+    list-style: none;
+}
+
+.education li,
+.achievements li,
+.hobbies li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.hobbies li {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.mov li {
+    align-items: center;
+}
+
+.education li img {
+    width: 75px;
+    height: auto;
+    margin-right: 15px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.hobbies li img {
+    width: 250px;
+    height: auto;
+    margin-right: 15px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.achievements li img {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+
+.education li .logosd {
+    width: 75px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.mov li img {
+    width: auto;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.education li span,
+.achievements li span,
+.hobbies li span,
+.mov li span {
+    font-size: 1.1em;
+}
+textarea{
+    width: 100%;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #306eff;
+    color:black;
+    border-radius: 0 0 10px 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile h1 {
+        font-size: 2em;
+    }
+
+    .profile p {
+        font-size: 1em;
+    }
+
+    .section h2 {
+        font-size: 1.75em;
+    }
+
+    .education li img,
+    .achievements li img,
+    .hobbies li img, .mov li img, .education li .logosd {
+        width: 60px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    .education li span,
+    .achievements li span,
+    .hobbies li span {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .profile h1 {
+        font-size: 1.75em;
+    }
+
+    .section h2 {
+        font-size: 1.5em;
+    }
+
+    .education li,
+    .achievements li,
+    .hobbies li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .education li img,
+    .achievements li img,
+    .hobbies li img,
+    .mov li img {
+        margin-bottom: 5px;
+    }
+    
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    font-size: 15px;
+    
+}
+button{
+    margin-top: 10px;
+    width: 20%;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.success {
+    color: green;
+    margin-top: 10px;
+}
+
+.loading-icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #ccc;
+    border-top: 3px solid #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

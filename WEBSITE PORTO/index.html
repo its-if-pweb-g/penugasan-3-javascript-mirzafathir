@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Profil -->
+        <div class="profile">
+            <img src="assets/PAS_FOTO.JPG" alt="Foto Profil">
+            <h1>Mirza Syahrizal Fathir</h1>
+            <p>Mahasiswa</p>
+        </div>
+
+        <!-- Deskripsi -->
+        <div class="desc">
+            <h2>Deskripsi</h2>
+            <p>Saya adalah seorang pengembang web dengan pengalaman dalam menciptakan solusi web yang inovatif dan
+                menarik. Dengan keahlian dalam berbagai bahasa pemrograman dan desain, saya bersemangat untuk mengubah
+                ide-ide menjadi kenyataan melalui teknologi.</p>
+        </div>
+
+        <!-- Riwayat Pendidikan -->
+        <div class="section">
+            <h2>Riwayat Pendidikan</h2>
+            <ul class="education">
+                <li>
+                    <img src="assets/LOGO_ITS.png" alt="Ikon Universitas">
+                    <span>Institut Teknologi Sepuluh Nopember - S1 Teknik Informatika (2023 - Sekarang)</span>
+                </li>
+                <li>
+                    <img src="assets/logosman20.png" alt="Ikon Sekolah">
+                    <span>SMA Negeri 20 Surabaya - IPA (2020 - 2023)</span>
+                </li>
+                <li>
+                    <img src="assets/logosmpn35.png" alt="Ikon Sekolah">
+                    <span>SMP Negeri 35 Surabaya (2017 - 2020)</span>
+                </li>
+                <li>
+                    <img class="logosd" src="assets/logosd.png" alt="Ikon Sekolah">
+                    <span>SDN Buncitan (2011 - 2017)</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Prestasi -->
+        <div class="section">
+            <h2>Prestasi</h2>
+            <ul class="achievements">
+                <li>
+                    <img src="assets/Basket_SMA.jpg" alt="Ikon Piala">
+                    <span>Juara 2 Lomba Basket (2020)</span>
+                </li>
+                <li>
+                    <img src="assets/Delegasi Surabaya-Busan.jpeg" alt="Ikon Medali">
+                    <span>Delegasi Pelajar Surabaya-Busan (2019)</span>
+                </li>
+                <li>
+                    <img src="assets/LombaMobil_SMP.jpeg" alt="Ikon Medali">
+                    <span>Juara 1 Lomba Merakit Mobil Hidrogen (2019)</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Hobi -->
+        <div class="section">
+            <h2>Hobi</h2>
+            <ul class="hobbies">
+                <li>
+                    <span><b>BASKET</b></span>
+                    <img src="assets/hobibasket.jpg" alt="Ikon Hobi 1">
+                </li>
+                <li>
+                    <span><b>TRAVELLING</b></span>
+                    <img src="assets/hobitraveling.HEIC" alt="Ikon Hobi 2">
+                </li>
+            </ul>
+        </div>
+        <!-- TOP 3 Movies -->
+        <div class="section">
+            <h2>TOP 3 FILM</h2>
+            <ul class="mov">
+                <li>
+                    <img src="assets/movAgakLaen.jpg" alt="Ikon Film 1">
+                    <h3>AGAK LAEN</h3>
+                    <p>Saya suka film ini karena membawakan konsep yang baru untuk industri film Indonesia dengan menggabungkan genre komedi dengan horror.</p>
+                </li>
+                <li>
+                    <img src="assets/movCoach.jpg" alt="Ikon Film 2">
+                    <h3>COACH CARTER</h3>
+                    <p>Film ini sangat menarik bagi saya yang memiliki hobi bermain basket.</p>
+                </li>
+                <li>
+                    <img src="assets/movRudy.jpg" alt="Ikon Film 3">
+                    <h3>RUDY HABIBIE</h3>
+                    <p>Selalu berkesan ketika menonton film tentang Habibie, tetapi Rudy Habibie (Habibie & Ainun 2) yang menjadi favorit saya karena terfokus dengan masa muda Habibie.</p>
+                </li>
+            </ul>
+        </div>
+        <!-- CONTACT ME -->
+        <div class="special">
+            <h2>Form Pengiriman</h2>
+            <form id="contactForm">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama">
+                <div id="errorNama" class="error"></div>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <div id="errorEmail" class="error"></div>
+            
+                <label for="pesan">Pesan:</label>
+                <input id="pesan" name="pesan"></input>
+                <div id="errorPesan" class="error"></div>
+            
+                <button type="submit" id="submitBtn">
+                    <span id="submitText">Kirim</span>
+                    <div id="loadingIcon" class="loading-icon"></div>
+                </button>
+                <div id="successMessage" class="success"></div>
+            </form>
+            
+            <h3>Text Field</h3>
+            <textarea id="userTextField" placeholder="Ketik sesuatu..."></textarea>
+            <p><strong>Text:</strong> <span id="displayText"></span></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 Arsip Fathir. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
